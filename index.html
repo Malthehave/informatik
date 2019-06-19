@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
     <!-- Vores favicon -->
     <link rel="shortcut icon" type="image/png" href="images/logo/favicon.png" />
+    <!-- Link til vores eksterne CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <!-- navigationsbar start -->
+    <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
                 <img src="images/logo/logo-hjemmeside.png" width="112" height="28">
@@ -70,7 +73,10 @@
             </div>
         </div>
     </nav>
+    <!-- navigationsbar end -->
 
+
+    <!-- Hero start -->
     <section class="hero is-medium is-primary is-bold">
         <div class="hero-body">
             <div class="container">
@@ -83,73 +89,145 @@
             </div>
         </div>
     </section>
+    <!-- Hero slut -->
 
     <br>
 
     <!-- Produkter section start -->
     <div class="container bottom-space">
-            <div class="content has-text-centered">
-                <h1>Tre simple skridt</h1>
+        <div class="content has-text-centered">
+            <h1>Produkter</h1>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-3by4">
+                            <img src="images/gul-kaffe.png" alt="Produkt 1">
+                        </figure>
+                    </div>
+                    <hr>
+                    <div class="card-content">
+                        <p class="title">
+                            Kaffe 1
+                        </p>
+                        <p class="subtitle">
+                            Noget tekst her
+                        </p>
+                        <a class="button is-primary">Se Mere</a>
+                    </div>
+                </div>
             </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="images/what-1.svg" alt="What 1">
-                            </figure>
-                        </div>
-                        <hr>
-                        <div class="card-content">
-                            <p class="title">
-                                Kaffe 1
-                            </p>
-                            <p class="subtitle">
-                                Noget tekst her
-                            </p>
-                        </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-3by4">
+                            <img src="images/orange-kaffe.png" alt="Produkt 2">
+                        </figure>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="images/what-2.svg" alt="What 2">
-                            </figure>
-                        </div>
-                        <hr>
-                        <div class="card-content">
-                            <p class="title">
-                                Kaffe 2
-                            </p>
-                            <p class="subtitle">
-                                Noget tekst her
-                            </p>
-                        </div>
-    
+                    <hr>
+                    <div class="card-content">
+                        <p class="title">
+                            Kaffe 2
+                        </p>
+                        <p class="subtitle">
+                            Noget tekst her
+                        </p>
+                        <a class="button is-primary">Se Mere</a>
                     </div>
+
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="images/what-3.svg" alt="What 3">
-                            </figure>
-                        </div>
-                        <hr>
-                        <div class="card-content">
-                            <p class="title">
-                                Kaffe 3
-                            </p>
-                            <p class="subtitle">
-                                Noget tekst her
-                            </p>
-                        </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-3by4">
+                            <img src="images/roed-kaffe.png">
+                        </figure>
+                    </div>
+                    <hr>
+                    <div class="card-content">
+                        <p class="title">
+                            Kaffe 3
+                        </p>
+                        <p class="subtitle">
+                            Noget tekst her
+                        </p>
+                        <a class="button is-primary">Se Mere</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Produkter section end -->
+    </div>
+    <!-- Produkter section slut -->
+
+
+    <!-- Bulletpoints start -->
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">Sundt</p>
+                            <p class="subtitle">Noget tekst her</p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title">Bæredygtigt</p>
+                            <p class="subtitle">Noget tekst her</p>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-info">
+                            <p class="title">Fairtrade</p>
+                            <p class="subtitle">Noget tekst her</p>
+                            <figure class="image is-4by3">
+                                <img src="images/fairtrade.png">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                        <p class="title">Lorem ipsum</p>
+                        <p class="subtitle">Noget tekst her</p>
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">Lorem Ipsum</p>
+                        <p class="subtitle">Noget tekst her</p>
+                        <figure class="image">
+                            <img src="images/roed-kaffe.png">
+                        </figure>
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <!-- Bulletpoints slut -->
+
+    <hr>
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Coffe Hut</strong> -
+                <a href="#">Alle Produkter</a> -
+                <a href="#">Om os</a>
+            </p>
+        </div>
+    </footer>
+    <!-- Footer slut -->
 
 </body>
 

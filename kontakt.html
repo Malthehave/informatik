@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alle Produkter | Coffee Hut</title>
+    <title>Kontakt | Coffee Hut</title>
     <!-- Vi linker til Bulma CSS (Eksternt CSS) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
     <!-- Vores favicon -->
@@ -36,7 +36,7 @@
                     Hjem
                 </a>
 
-                <a href="/produkter.html" class="navbar-item is-active">
+                <a href="/produkter.html" class="navbar-item">
                     Alle Produkter
                 </a>
 
@@ -54,7 +54,7 @@
                             Om Os
                         </a>
                         <hr class="navbar-divider">
-                        <a href="/kontakt.html" class="navbar-item">
+                        <a href="/kontakt.html" class="navbar-item is-active">
                             Kontakt
                         </a>
                     </div>
@@ -74,96 +74,47 @@
     </nav>
     <!-- navigationsbar slut -->
 
-    <!-- Hero start -->
+    <!-- Heor Start -->
     <section class="hero is-primary">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    Vores Produkter
+                    Kontakt
                 </h1>
                 <h2 class="subtitle">
-                    Se en liste over alle vores produkter!
+                    Hvis du har spørgsmål
                 </h2>
             </div>
         </div>
     </section>
-    <!-- Hero slut -->
+    <!-- Hero Slut -->
 
-    <!-- Vores produkter start -->
+    <!-- Kontakt sektion start -->
     <div class="container">
         <div class="box negativ-margin">
             <div class="content has-text-centered">
-                <h1>Alle Produkter</h1>
+                <h1>Kontakt Os</h1>
             </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-3by4">
-                                <img src="images/gul-kaffe.png" alt="Produkt 1">
-                            </figure>
-                        </div>
-                        <hr>
-                        <div class="card-content">
-                            <p class="title">
-                                Iced Latte
-                            </p>
-                            <p class="subtitle">
-                                Noget tekst her
-                                <br>
-                                25 kr.
-                            </p>
-                            <a class="button is-primary">Se Mere</a>
-                        </div>
+            <form action="/besked.html" method="post">
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Din email">
                     </div>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-3by4">
-                                <img src="images/orange-kaffe.png" alt="Produkt 2">
-                            </figure>
-                        </div>
-                        <hr>
-                        <div class="card-content">
-                            <p class="title">
-                                Nitro Coffee
-                            </p>
-                            <p class="subtitle">
-                                Noget tekst her
-                                <br>
-                                25 kr.
-                            </p>
-                            <a class="button is-primary">Se Mere</a>
-                        </div>
-
+                <div class="field">
+                    <label class="label">Besked</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Din Besked her"></textarea>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-3by4">
-                                <img src="images/roed-kaffe.png">
-                            </figure>
-                        </div>
-                        <hr>
-                        <div class="card-content">
-                            <p class="title">
-                                Iced Mocha
-                            </p>
-                            <p class="subtitle">
-                                Noget tekst her
-                                <br>
-                                19 kr.
-                            </p>
-                            <a class="button is-primary">Se Mere</a>
-                        </div>
-                    </div>
+                <div class="control">
+                    <button class="button is-primary" type="submit">Send</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
-    <!-- Vores Produkter slut -->
+    <!-- Kontakt sektion slut -->
 
     <!-- Footer start -->
     <footer class="footer">
